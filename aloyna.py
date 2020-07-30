@@ -1,0 +1,5 @@
+num,types=map(int,input().split())
+array=list(map(int,input().split()))
+each=list(map(lambda x:array.count(x),set(array)))
+rep=list(set(array))
+print(rep[each.index(max(each))])
